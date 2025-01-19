@@ -6,197 +6,193 @@
   <title>ポートフォリオ</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* カラーテーマ */
-    :root {
-      --primary-color: #4a4a4a; /* テキストの濃いグレー */
-      --secondary-color: #ffecec; /* 背景の淡いピンク */
-      --accent-color: rgb(238, 164, 164); /* 強調用の赤みがかったピンク */
-      --card-background: #ffffff; /* カードの背景色 */
-      --card-border: #ffcdd2; /* カードの境界色 */
-    }
+	/* カラーテーマ */
+	:root {
+	  --primary-color: #4a4a4a; /* テキストの濃いグレー */
+	  --secondary-color: #ffecec; /* 背景の淡いピンク */
+	  --accent-color: rgb(238, 164, 164); /* 強調用の赤みがかったピンク */
+	  --card-background: #ffffff; /* カードの背景色 */
+	  --card-border: #ffcdd2; /* カードの境界色 */
+	}
 
-    body {
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
+	body {
+	  background-color: var(--secondary-color);
+	  color: var(--primary-color);
+	  font-family: 'Roboto', sans-serif;
+	  line-height: 1.6;
+	  margin: 0;
+	  padding: 0;
+	}
 
-    header {
-      background-color: var(--accent-color);
-      color: white;
-      padding: 1em 2em;
-      text-align: center;
-      border-bottom: 4px solid var(--card-border);
-    }
+	header {
+	  background-color: var(--accent-color);
+	  color: white;
+	  padding: 1em 2em;
+	  text-align: center;
+	  border-bottom: 4px solid var(--card-border);
+	}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+	header h1 {
+	  margin: 0;
+	  font-size: 2.5rem;
+	}
 
-    main {
-      max-width: 900px;
-      margin: 2em auto;
-      padding: 1em;
-    }
+	main {
+	  max-width: 900px;
+	  margin: 2em auto;
+	  padding: 1em;
+	}
 
-    h2 {
-      color: var(--primary-color);
-      font-weight: 700;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-      border-bottom: 2px solid var(--card-border);
-      padding-bottom: 0.2em;
-    }
+	h2 {
+	  color: var(--primary-color);
+	  font-weight: 700;
+	  margin-top: 2em;
+	  margin-bottom: 0.5em;
+	  border-bottom: 2px solid var(--card-border);
+	  padding-bottom: 0.2em;
+	}
 
-    .card {
-      background-color: var(--card-background);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      padding: 1.5em;
-      margin: 1em 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
+	.card {
+	  background-color: var(--card-background);
+	  border: 1px solid var(--card-border);
+	  border-radius: 12px;
+	  padding: 1.5em;
+	  margin: 1em 0;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	  transition: transform 0.2s, box-shadow 0.2s;
+	}
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+	.card:hover {
+	  transform: translateY(-5px);
+	  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
 
-    .card h3 {
-      margin-top: 0;
-      color: var(--primary-color);
-    }
+	.card h3 {
+	  margin-top: 0;
+	  color: var(--primary-color);
+	}
 
-    .card p {
-      color: #555;
-    }
+	.card p {
+	  color: #555;
+	}
 
-    .card a {
-      color: var(--accent-color);
-      text-decoration: none;
-      font-weight: bold;
-    }
+	.card a {
+	  color: var(--accent-color);
+	  text-decoration: none;
+	  font-weight: bold;
+	}
 
-    .card a:hover {
-      text-decoration: underline;
-    }
+	.card a:hover {
+	  text-decoration: underline;
+	}
 
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-      font-weight: bold;
-    }
+	a {
+	  color: var(--accent-color);
+	  text-decoration: none;
+	  font-weight: bold;
+	}
 
-    a:hover {
-      text-decoration: underline;
-    }
+	a:hover {
+	  text-decoration: underline;
+	}
 
-    @media (max-width: 768px) {
-      body {
-        margin: 0 1em;
-      }
+	@media (max-width: 768px) {
+	  body {
+	    margin: 0 1em;
+	  }
 
-      h1 {
-        font-size: 2rem;
-      }
+	  h1 {
+	    font-size: 2rem;
+	  }
 
-      h2 {
-        font-size: 1.5rem;
-      }
-    }
+	  h2 {
+	    font-size: 1.5rem;
+	  }
+	}
+	/* ギャラリーのスタイル */
+	.gallery {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	  gap: 1em;
+	}
 
-    /* ギャラリーのスタイル */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 1em;
-    }
+	.thumbnail {
+	  width: 100%;
+	  cursor: pointer;
+	  transition: transform 0.3s, box-shadow 0.3s;
+	  border-radius: 8px;
+	}
 
-    .thumbnail {
-      width: 100%;
-      cursor: pointer;
-      transition: transform 0.3s, box-shadow 0.3s;
-      border-radius: 8px;
-    }
+	.thumbnail:hover {
+	  transform: scale(1.05);
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
 
-    .thumbnail:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+	/* 拡大表示エリア */
+	.expanded-view1, .expanded-view2, .expanded-view3 {
+	  margin-top: 2em;
+	  text-align: center;
+	  display: none; /* 初期状態では非表示 */
+	  position: relative;
+	}
 
-    /* 拡大表示エリア */
-    .expanded-view1, .expanded-view2, .expanded-view3 {
-      margin-top: 2em;
-      text-align: center;
-      display: none; /* 初期状態では非表示 */
-      position: relative;
-    }
+	.expanded-view1 img, .expanded-view2 img, .expanded-view3 img {
+	  max-width: 90%;
+	  max-height: 70vh;
+	  border-radius: 10px;
+	  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	  margin-bottom: 1em;
+	}
 
-    .expanded-view1 img, .expanded-view2 img, .expanded-view3 img {
-      max-width: 90%;
-      max-height: 70vh;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      margin-bottom: 1em;
-    }
-
-    .expanded-view1 p, .expanded-view2 p, .expanded-view3 p {
-      font-size: 1rem;
-      color: #555;
-      margin-top: 0;
-    }
+	.expanded-view1 p, .expanded-view2 p, .expanded-view3 p {
+	  font-size: 1rem;
+	  color: #555;
+	  margin-top: 0;
+	}
   </style>
 </head>
-
 <body>
   <header>
     <h1>ポートフォリオ</h1>
   </header>
-
   <main>
     <!-- 作成物セクション -->
     <section id="created">
       <h2>■作成物</h2>
       <h4>※画像はそれぞれクリックで拡大+説明文を表示します</h4>
 
-      <!-- プロジェクト1 -->
-      <div class="card" id="project1">
-        <h3>1.社員名簿管理アプリケーション</h3>
-        <p>Spring Framework、Bootstrapを使用した社員名簿管理Webアプリケーション。</p>
-        <ul>
-          <li>社員IDの作成、編集、削除機能</li>
-          <li>Bootstrapを使用した動的なUI実装</li>
-          <li>※Bootstrapのテストのため簡易的な実装です</li>
-        </ul>
-        <div class="expanded-view1">
-          <img id="expanded-img1" alt="拡大画像">
-          <p id="expanded-description1">画像の説明がここに表示されます。</p>
-        </div>
 
-        <div class="gallery">
-          <div class="thumbnail-container">
-            <img src="img/c/c0.jpg" alt="SS1" class="thumbnail" data-description="トップ画面です。データベースはh2でメモリ内で管理してます。">
-          </div>
-          <div class="thumbnail-container">
-            <img src="img/c/c1.jpg" alt="SS2" class="thumbnail" data-description="追加画面です。簡易実装のため項目は少なめにしています。">
-          </div>
-          <div class="thumbnail-container">
-            <img src="img/c/c2.jpg" alt="SS3" class="thumbnail" data-description="追加後のイメージです、ボタンなどもbootstrapのものを利用してます。">
-          </div>
-          <div class="thumbnail-container">
-            <img src="img/c/c3.jpg" alt="SS4" class="thumbnail" data-description="404エラー画面も実装、全ての画面でウィンドウサイズを小さくするとメニューボタンが変化します。">
-          </div>
-        </div>
-
-        <a href="https://github.com/ogawa-sakura/employee">コードを見る</a>
-      </div>
-
-      <!-- プロジェクト2 -->
+	  <div class="card" id="project1">
+	     <h3>1.社員名簿管理アプリケーション</h3>
+	     <p>Spring Framework、Bootstrapを使用した社員名簿管理Webアプリケーション。</p>
+	     <ul>
+	       <li>社員IDの作成、編集、削除機能</li>
+	       <li>Bootstrapを使用した動的なUI実装</li>
+	       <li>※Bootstrapのテストのため簡易的な実装です</li>
+	     </ul>
+	  <div class="expanded-view1">
+	  		  <img id="expanded-img1" alt="拡大画像">
+	  		  <p id="expanded-description1">画像の説明がここに表示されます。</p>
+	  		</div>
+	  		
+			<div class="gallery">
+			  <div class="thumbnail-container">
+			    <img src="img/c/c0.jpg" alt="SS1" class="thumbnail" data-description="トップ画面です。データベースはh2でメモリ内で管理してます。">
+			  </div>
+			  <div class="thumbnail-container">
+			    <img src="img/c/c1.jpg" alt="SS2" class="thumbnail" data-description="追加画面です。簡易実装のため項目は少なめにしています。">
+			  </div>
+			  <div class="thumbnail-container">
+			    <img src="img/c/c2.jpg" alt="SS3" class="thumbnail" data-description="追加後のイメージです、ボタンなどもbootstrapのものを利用してます。">
+			  </div>
+			  <div class="thumbnail-container">
+			    <img src="img/c/c3.jpg" alt="SS4" class="thumbnail" data-description="404エラー画面も実装、全ての画面でウィンドウサイズを小さくするとメニューボタンが変化します。">
+			  </div>
+	  		</div>
+	     <a href="https://github.com/ogawa-sakura/employee">コードを見る</a>
+	   </div>
+	  
+	  
       <div class="card" id="project2">
         <h3>2.タスク管理アプリケーション</h3>
         <p>Spring Framework、MySQLを使用したタスク管理Webアプリケーション。</p>
@@ -206,83 +202,175 @@
           <li>JavaScriptを使用した動的なモーダルウィンドウUI実装</li>
           <li>独自アノテーション作成活用</li>
         </ul>
-        <div class="expanded-view2">
-          <img id="expanded-img2" alt="拡大画像">
-          <p id="expanded-description2">画像の説明がここに表示されます。</p>
-        </div>
-
-        <div class="gallery">
-          <div class="thumbnail-container">
-            <img src="img/b/b0.jpg" alt="SS1" class="thumbnail" data-description="トップ画面です。初期表示では期限順に並んでいて、完了タスクが下にまとめられています。">
-          </div>
-          <div class="thumbnail-container">
-            <img src="img/b/b1.jpg" alt="SS2" class="thumbnail" data-description="タスク追加画面です。モーダルウィンドウで動的に表示し、バリデーションチェックも実装してます。">
-          </div>
-          <div class="thumbnail-container">
-            <img src="img/b/b2.jpg" alt="SS3" class="thumbnail" data-description="編集画面です。追加画面と同じくバリデーションチェックも実装済です。">
-          </div>
-          <div class="thumbnail-container">
-            <img src="img/b/b3.jpg" alt="SS4" class="thumbnail" data-description="トップ画面では各項目の降順昇順ソートも可能です。">
-          </div>
-        </div>
-
-        <a href="https://github.com/ogawa-sakura/tasklist">コードを見る</a>
+		<div class="expanded-view2">
+		  <img id="expanded-img2" alt="拡大画像">
+		  <p id="expanded-description2">画像の説明がここに表示されます。</p>
+		</div>
+		
+		<div class="gallery">
+		  <div class="thumbnail-container">
+		    <img src="img/b/b0.jpg" alt="SS1" class="thumbnail" data-description="トップ画面です。初期表示では期限順に並んでいて、完了タスクが下にまとめられています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/b/b1.jpg" alt="SS2" class="thumbnail" data-description="タスク追加画面です。モーダルウィンドウで動的に表示し、バリデーションチェックも実装してます。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/b/b2.jpg" alt="SS3" class="thumbnail" data-description="編集画面です。追加画面と同じくバリデーションチェックも実装済です。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/b/b3.jpg" alt="SS4" class="thumbnail" data-description="トップ画面では各項目の降順昇順ソートも可能です。">
+		  </div>
+		</div>
+		<a href="https://github.com/ogawa-sakura/tasklist">コードを見る</a>
       </div>
-
-      <!-- プロジェクト3 -->
-      <div class="card" id="project3">
-        <h3>3.ショッピングECサイト</h3>
-        <p>Java、Servlet/JSP、MySQLを使用したECサイトアプリケーション。</p>
-        <ul>
-          <li>商品の検索、カート機能、注文履歴の管理機能を実装</li>
-          <li>MySQLデータベースを用いたログイン認証システム</li>
-          <li>バリデーションを活用した新規ID作成機能</li>
-          <li>データベース第２正規化により注文履歴管理やデータベースの効率化を実現</li>
-        </ul>
-        <div class="expanded-view3">
+	  
+ 	  <div class="card" id="project3">
+	    <h3>3.ショッピングECサイト</h3>
+	    <p>Java、Servlet/JSP、MySQLを使用したECサイトアプリケーション。</p>
+	    <ul>
+	      <li>商品の検索、カート機能、注文履歴の管理機能を実装</li>
+	      <li>MySQLデータベースを用いたログイン認証システム</li>
+	      <li>バリデーションを活用した新規ID作成機能</li>
+	      <li>データベース第２正規化により注文履歴管理やデータベースの効率化を実現</li>
+	    </ul>
+		<div class="expanded-view3">
           <img id="expanded-img3" alt="拡大画像">
           <p id="expanded-description3">画像の説明がここに表示されます。</p>
-        </div>
-
+		</div>
+				
         <div class="gallery">
           <div class="thumbnail-container">
-            <img src="img/a/a0.jpg" alt="SS1" class="thumbnail" data-description="トップ画面です。商品一覧からの検索も可能で、一覧がページネーションされています。">
+            <img src="img/a/a1.jpg" alt="SS1" class="thumbnail" data-description="トップ画面です。上部にメニューバーがありログイン管理やメニュー移行ができます。">
           </div>
           <div class="thumbnail-container">
-            <img src="img/a/a1.jpg" alt="SS2" class="thumbnail" data-description="商品詳細画面です。カート追加、商品の評価機能も実装しました。">
+            <img src="img/a/a2.jpg" alt="SS2" class="thumbnail" data-description="商品画面です。デフォルトで全件表示され、あいまい検索や複数指定でのカートに入れることも出来ます。">
           </div>
           <div class="thumbnail-container">
-            <img src="img/a/a2.jpg" alt="SS3" class="thumbnail" data-description="カート画面で、注文内容を確認できます。">
+            <img src="img/a/a3.jpg" alt="SS3" class="thumbnail" data-description="カート画面です。合計金額点数も保持し、プルダウンで個数も変更可能です。">
           </div>
           <div class="thumbnail-container">
-            <img src="img/a/a3.jpg" alt="SS4" class="thumbnail" data-description="注文履歴を一覧で確認できます。各履歴から詳細ページも遷移可能です。">
+            <img src="img/a/a4.jpg" alt="SS4" class="thumbnail" data-description="ログイン画面です。MySQLデータベースと照合しログイン管理しています。">
           </div>
+		  <div class="thumbnail-container">
+		    <img src="img/a/a5.jpg" alt="SS5" class="thumbnail" data-description="ID新規登録画面です。モーダルウィンドウで利用規約を表示し、規約に同意することで登録ボタンが有効になります。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/a/a6.jpg" alt="SS6" class="thumbnail" data-description="ID新規登録画面では各項目バリデーションチェックも実装してます。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/a/a8.jpg" alt="SS7" class="thumbnail" data-description="購入画面です。データベースより名前と住所を初期表示としています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/a/a9.jpg" alt="SS8" class="thumbnail" data-description="購入可能である場合、確定ボタンを押した際に確認メッセージを表示して購入処理を実施します。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/a/a10.jpg" alt="SS9" class="thumbnail" data-description="メニュー右のログイン名より飛べる個人情報欄です。購入履歴も合わせて表示しています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/a/a11.jpg" alt="SS10" class="thumbnail" data-description="使用したMySQLデータベースです。第二正規化を実施し、購入履歴や重複情報がなくなっています。">
+		  </div>
         </div>
-
-        <a href="https://github.com/ogawa-sakura/ecsite">コードを見る</a>
+	  <a href="https://github.com/ogawa-sakura/store">コードを見る</a>
+    </section>
+	
+	<!-- 技術スタックセクション -->
+	<section id="skill">
+	  <h2>■技術スタック</h2>
+	  <div class="card">
+	    <ul>
+	      <li>フロントエンド: HTML5, CSS3, JavaScript, Bootstrap</li>
+	      <li>バックエンド: Java, Spring Framework, Servlet/JSP</li>
+	      <li>データベース: MySQL</li>
+	      <li>開発ツール: Eclipse, Spring Tool Suite, Git</li>
+	    </ul>
+	  </div>
+	</section>
+	
+	<!-- 使用可能ツールセクション -->
+	<section id="tool">
+	  <h2>■使用可能ツール</h2>
+	  <div class="card">
+	    <ul>
+	      <li><a href="https://eclipseide.org/">Eclipse</a></li>
+	      <li><a href="https://forest.watch.impress.co.jp/library/software/heidisql/">HeidiSQL</a></li>
+	      <li><a href="https://spring.io/tools">SpringToolSuite</a></li>
+	    </ul>
+	  </div>
+	</section>
+	
+    <!-- 学習履歴セクション -->
+    <section id="learning-history">
+      <h2>■学習履歴</h2>
+      <div class="card">
+        <h3>職業訓練校</h3>
+        <p>2024/7～25/1までJava・Web技術科にてプログラム学習開始</p>
+      </div>
+      <div class="card">
+        <h3>資格取得</h3>
+        <p>2024/11 Oracle JAVA Silver取得</p>
       </div>
     </section>
+
+    <!-- 学習書籍・資料セクション -->
+    <section id="learning-book">
+      <h2>■学習書籍・資料</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://amzn.asia/d/7RkE2D1">スッキリわかるJava入門 第４版</a></li>
+          <li><a href="https://amzn.asia/d/0DpoZD2">スッキリわかるJava入門 実践編 第４版</a></li>
+          <li><a href="https://amzn.asia/d/g1XNmQ1">書き込み式SQLのドリル 改訂新版</a></li>
+          <li><a href="https://amzn.asia/d/fdC1m9I">基礎からのサーブレット/JSP 第５版</a></li>
+          <li><a href="https://amzn.asia/d/aUqhAVP">改訂新版SpringFramework超入門やさしくわかるWeb</a></li>
+          <li>（学校独自資料）JavaScript基礎応用</li>
+          <li>（学校独自資料）HTML・CSS基礎応用</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 自己学習セクション -->
+    <section id="self-learning">
+      <h2>■自己学習</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://amzn.asia/d/36M5AAm">徹底攻略JavaSilver問題集</a></li>
+          <li><a href="https://amzn.asia/d/0kUtUhp">CleanArchitecture達人に学ぶソフトウェア構造と設計</a></li>
+          <li><a href="https://amzn.asia/d/cYeHCdi">リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック </a></li>
+          <li>Paizaラーニング - Bランク取得</li>
+          <li>Atcoder - EASY/NOMALランクはほぼ回答可能、HARDは一部のみ回答可能</li>
+        </ul>
+      </div>
+    </section>
+
   </main>
-
   <script>
-    // 画像クリックで拡大表示機能
-    document.querySelectorAll('.thumbnail').forEach(img => {
-      img.addEventListener('click', (event) => {
-        const description = event.target.getAttribute('data-description');
-        const imgSrc = event.target.src;
+	document.addEventListener('DOMContentLoaded', () => {
+	  const projects = [
+	    { id: 'project1', view: '.expanded-view1', img: '#expanded-img1', desc: '#expanded-description1' },
+	    { id: 'project2', view: '.expanded-view2', img: '#expanded-img2', desc: '#expanded-description2' },
+	    { id: 'project3', view: '.expanded-view3', img: '#expanded-img3', desc: '#expanded-description3' },
+	  ];
 
-        // 対応する拡大表示エリアを表示
-        const expandedView = document.querySelector('.expanded-view' + event.target.closest('.card').id.slice(-1));
-        const expandedImg = expandedView.querySelector('img');
-        const expandedDesc = expandedView.querySelector('p');
+	  projects.forEach((project) => {
+	    const thumbnails = document.querySelectorAll(`#${project.id} .thumbnail`);
+	    const expandedView = document.querySelector(project.view);
+	    const expandedImg = document.querySelector(project.img);
+	    const expandedDescription = document.querySelector(project.desc);
 
-        expandedImg.src = imgSrc;
-        expandedDesc.textContent = description;
+	    thumbnails.forEach((thumbnail) => {
+	      thumbnail.addEventListener('click', () => {
+	        // 全ての拡大表示エリアを非表示に
+	        projects.forEach(p => document.querySelector(p.view).style.display = 'none');
+	        // クリックしたプロジェクトの拡大表示を表示
+	        expandedView.style.display = 'block';
+	        expandedImg.src = thumbnail.src;
+	        expandedImg.alt = thumbnail.alt;
+	        expandedDescription.textContent = thumbnail.getAttribute('data-description');
+	        expandedView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	      });
+	    });
+	  });
+	});
 
-        // 表示エリアを表示
-        expandedView.style.display = 'block';
-      });
-    });
   </script>
 </body>
 </html>
