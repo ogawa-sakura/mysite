@@ -129,14 +129,14 @@
 	}
 
 	/* 拡大表示エリア */
-	.expanded-view1, .expanded-view2, .expanded-view3 {
+	.expanded-view1, .expanded-view2, .expanded-view3, .expanded-view4 {
 	  margin-top: 2em;
 	  text-align: center;
 	  display: none; /* 初期状態では非表示 */
 	  position: relative;
 	}
 
-	.expanded-view1 img, .expanded-view2 img, .expanded-view3 img {
+	.expanded-view1 img, .expanded-view2 img, .expanded-view3, .expanded-view4 img {
 	  max-width: 90%;
 	  max-height: 70vh;
 	  border-radius: 10px;
@@ -144,7 +144,7 @@
 	  margin-bottom: 1em;
 	}
 
-	.expanded-view1 p, .expanded-view2 p, .expanded-view3 p {
+	.expanded-view1 p, .expanded-view2 p, .expanded-view3, .expanded-view4 p {
 	  font-size: 1rem;
 	  color: #555;
 	  margin-top: 0;
@@ -189,7 +189,7 @@
 			    <img src="img/c/c3.jpg" alt="SS4" class="thumbnail" data-description="404エラー画面も実装、全ての画面でウィンドウサイズを小さくするとメニューボタンが変化します。">
 			  </div>
 			</div>
-		<h3><a href="https://employee2-7756d4642fad.herokuapp.com/">実際の動作を確認する</a></h3>
+		<!--  <h3><a href="https://employee2-7756d4642fad.herokuapp.com/">実際の動作を確認する</a></h3>-->
 		<h3><a href="https://github.com/ogawa-sakura/employee">コードを見る</a></h3>
 	   </div>
 	  
@@ -222,7 +222,7 @@
 		    <img src="img/b/b3.jpg" alt="SS4" class="thumbnail" data-description="トップ画面では各項目の降順昇順ソートも可能です。">
 		  </div>
 		</div>
-		<h3><a href="https://employee-2dc0cbcd3616.herokuapp.com/">実際の動作を確認する</a></h3>
+		<!--<h3><a href="https://employee-2dc0cbcd3616.herokuapp.com/">実際の動作を確認する</a></h3>-->
 		<h3><a href="https://github.com/ogawa-sakura/tasklist">コードを見る</a></h3>
       </div>
 	  
@@ -273,6 +273,62 @@
 		  </div>
         </div>
 	  <a href="https://github.com/ogawa-sakura/store">コードを見る</a>
+ 	  </div>
+	  
+ 	  <div class="card" id="project4">
+	    <h3>4.ショッピングECサイト（3のSpring改変版）</h3>
+	    <p>Java、Spring Framework、MySQLを使用したECサイトアプリケーション。</p>
+	    <ul>
+	      <li>商品の検索、カート機能、注文履歴の管理機能を実装</li>
+	      <li>SpringSecurityを用いたログイン認証システム</li>
+	      <li>管理者権限機能での各データベースCRUD対応</li>
+	      <li>実際のショッピングサイトにあるデータベース構造に追加変更</li>
+	    </ul>
+		<div class="expanded-view4">
+          <img id="expanded-img4" alt="拡大画像">
+          <p id="expanded-description4">画像の説明がここに表示されます。</p>
+		</div>
+				
+        <div class="gallery">
+          <div class="thumbnail-container">
+            <img src="img/d/1.jpg" alt="SS1" class="thumbnail" data-description="トップ画面です。上部にメニューバーがあり、右にカートメニューがあります。">
+          </div>
+          <div class="thumbnail-container">
+            <img src="img/d/2.jpg" alt="SS2" class="thumbnail" data-description="ログイン画面です。SpringSecurity対応で権限機能にも対応しています。">
+          </div>
+          <div class="thumbnail-container">
+            <img src="img/d/3.jpg" alt="SS3" class="thumbnail" data-description="新規ID登録画面です。アノテーションでのバリデーションチェック対応です">
+          </div>
+          <div class="thumbnail-container">
+            <img src="img/d/4.jpg" alt="SS4" class="thumbnail" data-description="商品検索画面です。カテゴリー毎でのあいまい検索にも対応">
+          </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/5.jpg" alt="SS5" class="thumbnail" data-description="注文履歴画面です。最新からの注文毎にソートしています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/6.jpg" alt="SS6" class="thumbnail" data-description="購入画面です。登録住所以外にも送付できるように設計しています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/7.jpg" alt="SS7" class="thumbnail" data-description="購入完了後の画面です。注文番号・合計金額など表示しています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/8.jpg" alt="SS8" class="thumbnail" data-description="要管理者権限のID管理画面です。権限変更やID削除・注文リスト照会に対応しています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/9.jpg" alt="SS9" class="thumbnail" data-description="要管理者権限の注文管理画面です。配送状態毎のリスト確認・配送状態変更に対応しています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/10.jpg" alt="SS10" class="thumbnail" data-description="要管理者権限の商品管理画面です。在庫数・有効状態変更に対応しています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/11.jpg" alt="SS11" class="thumbnail" data-description="要管理者権限の商品追加画面です。新規ジャンル追加にも対応しています。">
+		  </div>
+		  <div class="thumbnail-container">
+		    <img src="img/d/12.jpg" alt="SS12" class="thumbnail" data-description="要管理者権限の商品情報修正画面です。ジャンルの変更なども一括でできます。">
+		  </div>
+        </div>
+		<h3><a href="https://webshop-sushi-a1db60046f9b.herokuapp.com/">実際の動作を確認する</a></h3>
+	  <a href="https://github.com/ogawa-sakura/webshop-sushi">コードを見る</a>
     </section>
 	
 	<!-- 技術スタックセクション -->
@@ -342,6 +398,19 @@
         </ul>
       </div>
     </section>
+	
+    <!-- 自己紹介セクション -->
+    <section id="add-user">
+      <h2>■作成者について</h2>
+      <div class="card">
+        <ul>
+          <li>氏名：小川　さくら</li>
+          <li>メール：<a href="mailto:whitecrow1227@gmail.com">whitecrow1227@gmail.com</a></li>
+          <li>その他：接客業を20年以上経験した後、プログラムに興味を持ち学習中。<br>
+			新しい技術などを覚えて効率化するのが好きです。興味がある方はどうぞよろしくお願いたします。</li>
+        </ul>
+      </div>
+    </section>
 
   </main>
   <script>
@@ -350,6 +419,7 @@
 	    { id: 'project1', view: '.expanded-view1', img: '#expanded-img1', desc: '#expanded-description1' },
 	    { id: 'project2', view: '.expanded-view2', img: '#expanded-img2', desc: '#expanded-description2' },
 	    { id: 'project3', view: '.expanded-view3', img: '#expanded-img3', desc: '#expanded-description3' },
+	    { id: 'project4', view: '.expanded-view4', img: '#expanded-img4', desc: '#expanded-description4' },
 	  ];
 
 	  projects.forEach((project) => {
